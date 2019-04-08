@@ -1,4 +1,4 @@
-var citydata = [
+var cityData = [
   {
     "name": "Adams County",
     "pop": "503,375"
