@@ -276,6 +276,7 @@ var cityData = [
     var city = cities.pop()
     round1slots[i].textContent = city["name"];
     round1slots[i].setAttribute("data-pop", city["pop"]);
+    
     round1slots[i].classList.add("active")
   }
 
@@ -333,4 +334,14 @@ var cityData = [
 
     }
 
+  });
+  
+  $('.round1').tooltip({
+    
+    // classes = $(this).attr("class")
+    // round = classes.match(/round\d{1,2}/g)[0]
+    // matchup = classes.match(/matchup\d{1,2}/g)[0]
+    // number = classes.match(/number\d/g)[0]
+    content: "Tooltip"
+    
   });
