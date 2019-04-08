@@ -1,0 +1,409 @@
+#primary {display: block; width:100%;} /*Correcting minnpost site issue*/
+
+  .citybracket, .citybracket h4 {
+    display: block;
+  }
+
+  .citybracket .number1 {
+    margin-bottom: 1em;
+  }
+
+  .citybracket h4 {
+    font-size: 2em;
+    margin-top:1.5em;
+    margin-bottom: 1em;
+  }
+
+  .citybracket hr {
+    display: block;
+    width: 50%;
+    margin: 3em auto 3em;
+    color: #404040;
+  }
+
+  .entry {
+    display: block;
+    height: 2em;
+    min-width:75px;
+    background-color: #ccc;
+    line-height:2em;
+    z-index: 99;
+    transform: translateZ(99px);
+    padding: 0 10px 0 10px;
+    font-size: 1.4em;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+
+  .entry.correct {background-color: #d5e8d8!important;}
+  .entry.correct::after{ content: "  \2714"; color: #1D8C47; }
+  .entry.incorrect {background-color: #fcd9d1!important;}
+  .entry.incorrect::after { content: "  \274C"; }
+
+
+  #scorebox {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90vh;
+    height: 10vh;
+    width:100%;
+    padding: .75em 0 .75em;
+    border-radius: 0;
+    border: none;
+  }
+
+  @supports (display: grid) {
+      .citybracket {
+        display: grid;
+        grid-template-columns: repeat(27, 1fr);
+        grid-template-rows: repeat(64, minmax(auto, max-content));
+        grid-gap: 0;
+      }
+
+      .citybracket h4 { display: none; }
+      .citybracket hr { display: none; }
+
+      .entry {
+        font-size:.8em;
+      }
+
+      .citybracket .number1 {margin:0;}
+
+
+      .bar {background-color: #7A7A7A; width:2px; z-index:0;}
+
+      .bar1 {grid-area: 1/4/4/4;}
+      .bar2 {grid-area: 5/4/8/4;}
+      .bar3 {grid-area: 9/4/12/4;}
+      .bar4 {grid-area: 13/4/16/4;}
+      .bar5 {grid-area: 17/4/20/4;}
+      .bar6 {grid-area: 21/4/24/4;}
+      .bar7 {grid-area: 25/4/28/4;}
+      .bar8 {grid-area: 29/4/32/4;}
+      .bar9 {grid-area: 33/4/36/4;}
+      .bar10 {grid-area: 37/4/40/4;}
+      .bar11 {grid-area: 41/4/44/4;}
+      .bar12 {grid-area: 45/4/48/4;}
+      .bar13 {grid-area: 49/4/52/4;}
+      .bar14 {grid-area: 53/4/56/4;}
+      .bar15 {grid-area: 57/4/60/4;}
+      .bar16 {grid-area: 61/4/64/4;}
+
+      .bar17 {grid-area: 1/25/4/25;}
+      .bar18 {grid-area: 5/25/8/25;}
+      .bar19 {grid-area: 9/25/12/25;}
+      .bar20 {grid-area: 13/25/16/25;}
+      .bar21 {grid-area: 17/25/20/25;}
+      .bar22 {grid-area: 21/25/24/25;}
+      .bar23 {grid-area: 25/25/28/25;}
+      .bar24 {grid-area: 29/25/32/25;}
+      .bar25 {grid-area: 33/25/36/25;}
+      .bar26 {grid-area: 37/25/40/25;}
+      .bar27 {grid-area: 41/25/44/25;}
+      .bar28 {grid-area: 45/25/48/25;}
+      .bar29 {grid-area: 49/25/52/25;}
+      .bar30 {grid-area: 53/25/56/25;}
+      .bar31 {grid-area: 57/25/60/25;}
+      .bar32 {grid-area: 61/25/64/25;}
+
+
+      .bar33 {grid-area: 2/7/7/7;}
+      .bar34 {grid-area: 10/7/15/7;}
+      .bar35 {grid-area: 18/7/23/7;}
+      .bar36 {grid-area: 26/7/31/7;}
+      .bar37 {grid-area: 34/7/39/7;}
+      .bar38 {grid-area: 42/7/47/7;}
+      .bar39 {grid-area: 50/7/55/7;}
+      .bar40 {grid-area: 58/7/63/7;}
+
+      .bar41 {grid-area: 2/22/7/22;}
+      .bar42 {grid-area: 10/22/15/22;}
+      .bar43 {grid-area: 18/22/23/22;}
+      .bar44 {grid-area: 26/22/31/22;}
+      .bar45 {grid-area: 34/22/39/22;}
+      .bar46 {grid-area: 42/22/47/22;}
+      .bar47 {grid-area: 50/22/55/22;}
+      .bar48 {grid-area: 58/22/63/22;}
+
+
+      .bar49 {grid-area: 4/9/13/9;}
+      .bar50 {grid-area: 20/9/29/9;}
+      .bar51 {grid-area: 36/9/45/9;}
+      .bar52 {grid-area: 52/9/61/9;}
+
+      .bar53 {grid-area: 4/20/13/20;}
+      .bar54 {grid-area: 20/20/29/20;}
+      .bar55 {grid-area: 36/20/45/20;}
+      .bar56 {grid-area: 52/20/61/20;}
+
+
+      .bar57 {grid-area: 8/11/25/11;}
+      .bar58 {grid-area: 40/11/57/11;}
+
+      .bar59 {grid-area: 8/18/25/18;}
+      .bar60 {grid-area: 40/18/57/18;}
+
+
+      .bar61 {grid-area: 16/12/49/12;}
+      .bar62 {grid-area: 16/17/49/17;}
+
+      .bar63 {grid-area: 30/12/32/12}
+      .bar64 {grid-area: 32/15/34/15}
+
+      .round1.matchup1.number1 {grid-area: 1/1/1/4;}
+      .round1.matchup1.number2 {grid-area: 3/1/3/4;}
+
+      .round1.matchup2.number1 {grid-area: 5/1/5/4;}
+      .round1.matchup2.number2 {grid-area: 7/1/7/4;}
+
+      .round1.matchup3.number1 {grid-area: 9/1/9/4;}
+      .round1.matchup3.number2 {grid-area: 11/1/11/4;}
+
+      .round1.matchup4.number1 {grid-area: 13/1/13/4;}
+      .round1.matchup4.number2 {grid-area: 15/1/15/4;}
+
+      .round1.matchup5.number1 {grid-area: 17/1/17/4;}
+      .round1.matchup5.number2 {grid-area: 19/1/19/4;}
+
+      .round1.matchup6.number1 {grid-area: 21/1/21/4;}
+      .round1.matchup6.number2 {grid-area: 23/1/23/4;}
+
+      .round1.matchup7.number1 {grid-area: 25/1/25/4;}
+      .round1.matchup7.number2 {grid-area: 27/1/27/4;}
+
+      .round1.matchup8.number1 {grid-area: 29/1/29/4;}
+      .round1.matchup8.number2 {grid-area: 31/1/31/4;}
+
+      .round1.matchup9.number1 {grid-area: 33/1/33/4;}
+      .round1.matchup9.number2 {grid-area: 35/1/35/4;}
+
+      .round1.matchup10.number1 {grid-area: 37/1/37/4;}
+      .round1.matchup10.number2 {grid-area: 39/1/39/4;}
+
+      .round1.matchup11.number1 {grid-area: 41/1/41/4;}
+      .round1.matchup11.number2 {grid-area: 43/1/43/4;}
+
+      .round1.matchup12.number1 {grid-area: 45/1/45/4;}
+      .round1.matchup12.number2 {grid-area: 47/1/47/4;}
+
+      .round1.matchup13.number1 {grid-area: 49/1/49/4;}
+      .round1.matchup13.number2 {grid-area: 51/1/51/4;}
+
+      .round1.matchup14.number1 {grid-area: 53/1/53/4;}
+      .round1.matchup14.number2 {grid-area: 55/1/55/4;}
+
+      .round1.matchup15.number1 {grid-area: 57/1/57/4;}
+      .round1.matchup15.number2 {grid-area: 59/1/59/4;}
+
+      .round1.matchup16.number1 {grid-area: 61/1/61/4;}
+      .round1.matchup16.number2 {grid-area: 63/1/63/4;}
+
+
+      .round1.matchup17.number1 {grid-area: 1/25/1/28;}
+      .round1.matchup17.number2 {grid-area: 3/25/3/28;}
+
+      .round1.matchup18.number1 {grid-area: 5/25/5/28;}
+      .round1.matchup18.number2 {grid-area: 7/25/7/28;}
+
+      .round1.matchup19.number1 {grid-area: 9/25/9/28;}
+      .round1.matchup19.number2 {grid-area: 11/25/11/28;}
+
+      .round1.matchup20.number1 {grid-area: 13/25/13/28;}
+      .round1.matchup20.number2 {grid-area: 15/25/15/28;}
+
+      .round1.matchup21.number1 {grid-area: 17/25/17/28;}
+      .round1.matchup21.number2 {grid-area: 19/25/19/28;}
+
+      .round1.matchup22.number1 {grid-area: 21/25/21/28;}
+      .round1.matchup22.number2 {grid-area: 23/25/23/28;}
+
+      .round1.matchup23.number1 {grid-area: 25/25/25/28;}
+      .round1.matchup23.number2 {grid-area: 27/25/27/28;}
+
+      .round1.matchup24.number1 {grid-area: 29/25/29/28;}
+      .round1.matchup24.number2 {grid-area: 31/25/31/28;}
+
+      .round1.matchup25.number1 {grid-area: 33/25/33/28;}
+      .round1.matchup25.number2 {grid-area: 35/25/35/28;}
+
+      .round1.matchup26.number1 {grid-area: 37/25/37/28;}
+      .round1.matchup26.number2 {grid-area: 39/25/39/28;}
+
+      .round1.matchup27.number1 {grid-area: 41/25/41/28;}
+      .round1.matchup27.number2 {grid-area: 43/25/43/28;}
+
+      .round1.matchup28.number1 {grid-area: 45/25/45/28;}
+      .round1.matchup28.number2 {grid-area: 47/25/47/28;}
+
+      .round1.matchup29.number1 {grid-area: 49/25/49/28;}
+      .round1.matchup29.number2 {grid-area: 51/25/51/28;}
+
+      .round1.matchup30.number1 {grid-area: 53/25/53/28;}
+      .round1.matchup30.number2 {grid-area: 55/25/55/28;}
+
+      .round1.matchup31.number1 {grid-area: 57/25/57/28;}
+      .round1.matchup31.number2 {grid-area: 59/25/59/28;}
+
+      .round1.matchup32.number1 {grid-area: 61/25/61/28;}
+      .round1.matchup32.number2 {grid-area: 63/25/63/28;}
+
+
+
+      .round2.matchup1.number1 {grid-area: 2/4/2/7;}
+      .round2.matchup1.number2 {grid-area: 6/4/6/7;}
+
+      .round2.matchup2.number1 {grid-area: 10/4/10/7;}
+      .round2.matchup2.number2 {grid-area: 14/4/14/7;}
+
+      .round2.matchup3.number1 {grid-area: 18/4/18/7;}
+      .round2.matchup3.number2 {grid-area: 22/4/22/7;}
+
+      .round2.matchup4.number1 {grid-area: 26/4/26/7;}
+      .round2.matchup4.number2 {grid-area: 30/4/30/7;}
+
+      .round2.matchup5.number1 {grid-area: 34/4/34/7;}
+      .round2.matchup5.number2 {grid-area: 38/4/38/7;}
+
+      .round2.matchup6.number1 {grid-area: 42/4/42/7;}
+      .round2.matchup6.number2 {grid-area: 46/4/46/7;}
+
+      .round2.matchup7.number1 {grid-area: 50/4/50/7;}
+      .round2.matchup7.number2 {grid-area: 54/4/54/7;}
+
+      .round2.matchup8.number1 {grid-area: 58/4/58/7;}
+      .round2.matchup8.number2 {grid-area: 62/4/62/7;}
+
+
+      .round2.matchup9.number1 {grid-area: 2/22/2/25;}
+      .round2.matchup9.number2 {grid-area: 6/22/6/25;}
+
+      .round2.matchup10.number1 {grid-area: 10/22/10/25;}
+      .round2.matchup10.number2 {grid-area: 14/22/14/25;}
+
+      .round2.matchup11.number1 {grid-area: 18/22/18/25;}
+      .round2.matchup11.number2 {grid-area: 22/22/22/25;}
+
+      .round2.matchup12.number1 {grid-area: 26/22/26/25;}
+      .round2.matchup12.number2 {grid-area: 30/22/30/25;}
+
+      .round2.matchup13.number1 {grid-area: 34/22/34/25;}
+      .round2.matchup13.number2 {grid-area: 38/22/38/25;}
+
+      .round2.matchup14.number1 {grid-area: 42/22/42/25;}
+      .round2.matchup14.number2 {grid-area: 46/22/46/25;}
+
+      .round2.matchup15.number1 {grid-area: 50/22/50/25;}
+      .round2.matchup15.number2 {grid-area: 54/22/54/25;}
+
+      .round2.matchup16.number1 {grid-area: 58/22/58/25;}
+      .round2.matchup16.number2 {grid-area: 62/22/62/25;}
+
+      .round3.matchup1.number1 {grid-area: 4/6/4/9;}
+      .round3.matchup1.number2 {grid-area: 12/6/12/9;}
+      .round3.matchup2.number1 {grid-area: 20/6/20/9;}
+      .round3.matchup2.number2 {grid-area: 28/6/28/9;}
+      .round3.matchup3.number1 {grid-area: 36/6/36/9;}
+      .round3.matchup3.number2 {grid-area: 44/6/44/9;}
+      .round3.matchup4.number1 {grid-area: 52/6/52/9;}
+      .round3.matchup4.number2 {grid-area: 60/6/60/9;}
+
+      .round3.matchup5.number1 {grid-area: 4/20/4/23;}
+      .round3.matchup5.number2 {grid-area: 12/20/12/23;}
+      .round3.matchup6.number1 {grid-area: 20/20/20/23;}
+      .round3.matchup6.number2 {grid-area: 28/20/28/23;}
+      .round3.matchup7.number1 {grid-area: 36/20/36/23;}
+      .round3.matchup7.number2 {grid-area: 44/20/44/23;}
+      .round3.matchup8.number1 {grid-area: 52/20/52/23;}
+      .round3.matchup8.number2 {grid-area: 60/20/60/23;}
+
+
+      .round4.matchup1.number1 {grid-area: 8/8/8/11}
+      .round4.matchup1.number2 {grid-area: 24/8/24/11}
+      .round4.matchup2.number1 {grid-area: 40/8/40/11}
+      .round4.matchup2.number2 {grid-area: 56/8/56/11}
+      .round4.matchup3.number1 {grid-area: 8/18/8/21}
+      .round4.matchup3.number2 {grid-area: 24/18/24/21}
+      .round4.matchup4.number1 {grid-area: 40/18/40/21}
+      .round4.matchup4.number2 {grid-area: 56/18/56/21}
+
+      .round5.matchup1.number1 {grid-area: 16/9/16/12}
+      .round5.matchup1.number2 {grid-area: 48/9/48/12}
+      .round5.matchup2.number1 {grid-area: 16/17/16/20}
+      .round5.matchup2.number2 {grid-area: 48/17/48/20}
+
+      .round6.matchup1.number1 {grid-area: 30/11/30/14}
+      .round6.matchup1.number2 {grid-area: 34/15/34/18}
+
+
+      .round7.matchup1.number1 {grid-area: 32/13/32/16}
+
+      #scorebox {
+        background-color:#fff;
+        z-index:150;
+        transform: translateZ(150px);
+        text-align: center;
+        font-family: "Helvetica", sans-serif;
+        font-size: 1.5em;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 15px;
+        height: 20px;
+        width: 175px;
+        padding: 1em;
+        margin:auto;
+        border-radius: 10px;
+        box-sizing: unset;
+        border: 5px solid #F8F8F8;
+
+      }
+
+      #score-total {
+        color: #1D8C47;
+      }
+
+  }
+
+  @media (max-width: 600px) {
+    .citybracket, .citybracket h4 {
+      display: block;
+    }
+
+    .citybracket .number1 {
+      margin-bottom: 1em;
+    }
+
+    .citybracket h4 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    .citybracket hr {
+      display: block;
+      width: 70%;
+      margin: 3em auto 3em;
+      color: #404040;
+    }
+
+    .entry {
+      text-align: center;
+      font-size: 1.8em;
+    }
+
+    #scorebox {
+      display: block;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 90vh;
+      height: 10vh;
+      width:100%;
+      padding: .75em 0 .75em;
+      border-radius: 0;
+      border: none;
+    }
+  }
