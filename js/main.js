@@ -1,4 +1,4 @@
-  [
+var citydata = [
   {
     "name": "Adams County",
     "pop": "503,375"
@@ -255,7 +255,7 @@
     "name": "Yuma County",
     "pop": "10,075"
   }
-]
+];
 
   function shuffle(a) {
     var j, x, i;
