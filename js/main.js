@@ -268,16 +268,37 @@ var cityData = [
     return a;
   }
 
-  cities = shuffle(cityData);
-  round1slots = $('.round1')
+  var cities = shuffle(cityData);
+  var cities2 = cities;
+  var round1slots = $('.round1');
 
   var i;
   for (i = 0; i < 64; i++) {
-    var city = cities.pop()
+    var city = cities.shift();
+    cities[cities.length] = city;
     round1slots[i].textContent = city["name"];
     round1slots[i].setAttribute("data-pop", city["pop"]);
-    
     round1slots[i].classList.add("active")
+  }
+
+  function myFunction(){
+      var checkBox = document.getElementById("myCheck");
+      var round1 = document.getElementsByClassName("round1");
+      if (checkBox.checked == true){
+         var i;
+         for (i = 0; i < 64; i++) {
+           var city = cities.shift();
+           cities[cities.length] = city;
+           document.getElementsByClassName("round1")[i].textContent = city["name"] + ': ' + commafy(city["pop"]);
+         }
+      } else {
+         var i;
+         for (i = 0; i < 64; i++) {
+           var city = cities.shift();
+           cities[cities.length] = city;
+           document.getElementsByClassName("round1")[i].textContent = city["name"];
+         }
+      }
   }
 
   function incrementScore() {
@@ -336,12 +357,15 @@ var cityData = [
 
   });
   
-  $('.round1').tooltip({
-    
-    // classes = $(this).attr("class")
-    // round = classes.match(/round\d{1,2}/g)[0]
-    // matchup = classes.match(/matchup\d{1,2}/g)[0]
-    // number = classes.match(/number\d/g)[0]
-    content: "Tooltip"
-    
-  });
+ function commafy(nStr) {
+        var x, x1, x2, rgx;
+        nStr += '';
+        x = nStr.split('.');
+        x1 = x[0];
+        x2 = x.length > 1 ? '.' + x[1] : '';
+        rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+  }
