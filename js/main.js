@@ -289,14 +289,14 @@ var cityData = [
          for (i = 0; i < 64; i++) {
            var city = cities.shift();
            cities[cities.length] = city;
-           document.getElementsByClassName("round1")[i].textContent = city["name"] + ': ' + commafy(city["pop"]);
+           document.getElementsByClassName("round1")[i].title = commafy(city["pop"]);
          }
       } else {
          var i;
          for (i = 0; i < 64; i++) {
            var city = cities.shift();
            cities[cities.length] = city;
-           document.getElementsByClassName("round1")[i].textContent = city["name"];
+           document.getElementsByClassName("round1")[i].title = '';
          }
       }
   }
