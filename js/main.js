@@ -306,7 +306,7 @@ var cityData = [
     $("#score-total").text(currentScore+1)
   }
 
-  $('.entry').click(function(){
+  $('.entry').on("click", function(){
 
     classes = $(this).attr("class")
     round = classes.match(/round\d{1,2}/g)[0]
