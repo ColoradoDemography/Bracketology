@@ -358,7 +358,8 @@ var cityData = [
   });
 
 //Accessible clicker
-$('.entry').on("keyup", function(){
+$('.entry').on("keyup", function(e){
+  if (e.key === "Enter"){
   classes = $(this).attr("class")
     round = classes.match(/round\d{1,2}/g)[0]
     matchup = classes.match(/matchup\d{1,2}/g)[0]
@@ -405,6 +406,7 @@ $('.entry').on("keyup", function(){
       $(opponent).toggleClass("active");
 
     }
+  }
 });
 
  function onKeyUp(e){
