@@ -1,6 +1,6 @@
 #primary {display: block; width:100%;} /*Correcting minnpost site issue*/
 
-  .citybracket, .citybracket h4 {
+  .citybracket, .citybracket .roundheader {
     display: block;
   }
 
@@ -8,7 +8,7 @@
     margin-bottom: 1em;
   }
 
-  .citybracket h4 {
+  .citybracket .roundheader {
     font-size: 2em;
     margin-top:1.5em;
     margin-bottom: 1em;
@@ -66,7 +66,7 @@
         grid-gap: 0;
       }
 
-      .citybracket h4 { display: none; }
+      .citybracket .roundheader { display: none; }
       .citybracket hr { display: none; }
 
       .entry {
@@ -370,7 +370,7 @@
   }
 
   @media (max-width: 600px) {
-    .citybracket, .citybracket h4 {
+    .citybracket, .citybracket .roundheader {
       display: block;
     }
 
@@ -378,7 +378,7 @@
       margin-bottom: 1em;
     }
 
-    .citybracket h4 {
+    .citybracket .roundheader {
       font-size: 2em;
       margin-bottom: 1em;
     }
