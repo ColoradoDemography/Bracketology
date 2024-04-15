@@ -358,7 +358,7 @@ var cityData = [
   });
 
 //Accessible clicker
-function OnClick(){
+$('.entry').on("keyup", function(){
   classes = $(this).attr("class")
     round = classes.match(/round\d{1,2}/g)[0]
     matchup = classes.match(/matchup\d{1,2}/g)[0]
