@@ -356,6 +356,56 @@ var cityData = [
     }
 
   });
+
+//Accessible clicker
+function OnClick(){
+  classes = $(this).attr("class")
+    round = classes.match(/round\d{1,2}/g)[0]
+    matchup = classes.match(/matchup\d{1,2}/g)[0]
+    number = classes.match(/number\d/g)[0]
+
+    opponentNumber = (number == 'number1' ? 'number2' : 'number1')
+    opponent = "." + round + "." + matchup + "." + opponentNumber
+
+    if($(this).hasClass("active") && $(opponent).hasClass("active")) {
+
+      answerPopulation = parseInt($(this).data("pop"))
+      opponentPopulation = parseInt($(opponent).data("pop"))
+
+      roundNumber = parseInt(round.match(/\d{1,2}/g))
+      nextRoundNumber = roundNumber + 1
+
+      matchupNumber = parseInt(matchup.match(/\d{1,2}/g))
+      nextMatchupNumber = Math.round(matchupNumber/2,0)
+
+      if (nextMatchupNumber > matchupNumber/2) {
+        nextNumber = "number1"
+        nextOpponentNumber = "number2"
+      } else {
+        nextNumber = "number2"
+        nextOpponentNumber = "number1"
+      }
+
+      nextRound = ".round" + nextRoundNumber + ".matchup" + nextMatchupNumber + "." + nextNumber;
+
+      if (answerPopulation > opponentPopulation) {
+        $(this).toggleClass("correct")
+        $(nextRound).text($(this).text())
+        $(nextRound).data("pop", $(this).data("pop"))
+        $(nextRound).toggleClass("active")
+        incrementScore();
+      } else {
+        $(this).toggleClass("incorrect")
+        $(nextRound).text($(opponent).text())
+        $(nextRound).data("pop", $(opponent).data("pop"))
+        $(nextRound).toggleClass("active")
+      }
+
+      $(this).toggleClass("active");
+      $(opponent).toggleClass("active");
+
+    }
+});
   
  function commafy(nStr) {
         var x, x1, x2, rgx;
