@@ -405,7 +405,7 @@ function OnClick(){
       $(opponent).toggleClass("active");
 
     }
-});
+};
 
  function onKeyUp(e){
    if (e.key === "Enter") OnClick();
