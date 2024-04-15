@@ -409,10 +409,7 @@ $('.entry').on("keyup", function(e){
   }
 });
 
- function onKeyUp(e){
-   if (e.key === "Enter") OnClick();
- }
-  
+
  function commafy(nStr) {
         var x, x1, x2, rgx;
         nStr += '';
