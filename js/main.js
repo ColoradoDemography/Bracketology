@@ -1,259 +1,259 @@
 var cityData = [
   {
     "name": "Adams County",
-    "pop": 527501
+    "pop": 533580
   },
   {
     "name": "Alamosa County",
-    "pop": 16575
+    "pop": 16648
   },
   {
     "name": "Arapahoe County",
-    "pop": 656015
+    "pop": 655760
   },
   {
     "name": "Archuleta County",
-    "pop": 13986
+    "pop": 14178
   },
   {
     "name": "Baca County",
-    "pop": 3431
+    "pop": 3374
   },
   {
     "name": "Bent County",
-    "pop": 5400
+    "pop": 5686
   },
   {
     "name": "Boulder County",
-    "pop": 327424
+    "pop": 326663
   },
   {
     "name": "Broomfield County",
-    "pop": 76155
+    "pop": 76853
   },
   {
     "name": "Chaffee County",
-    "pop": 20261
+    "pop": 20598
   },
   {
     "name": "Cheyenne County",
-    "pop": 1722
+    "pop": 1719
   },
   {
     "name": "Clear Creek County",
-    "pop": 9366
+    "pop": 9153
   },
   {
     "name": "Conejos County",
-    "pop": 7572
+    "pop": 7497
   },
   {
     "name": "Costilla County",
-    "pop": 3614
+    "pop": 3636
   },
   {
     "name": "Crowley County",
-    "pop": 5620
+    "pop": 5638
   },
   {
     "name": "Custer County",
-    "pop": 5338
+    "pop": 5546
   },
   {
     "name": "Delta County",
-    "pop": 31581
+    "pop": 31778
   },
   {
     "name": "Denver County",
-    "pop": 712637
+    "pop": 715636
   },
   {
     "name": "Dolores County",
-    "pop": 2203
+    "pop": 2270
   },
   {
     "name": "Douglas County",
-    "pop": 376026
+    "pop": 383911
   },
   {
     "name": "Eagle County",
-    "pop": 55291
+    "pop": 54411
   },
   {
     "name": "Elbert County",
-    "pop": 27821
+    "pop": 28795
   },
   {
     "name": "El Paso County",
-    "pop": 740552
+    "pop": 744153
   },
   {
     "name": "Fremont County",
-    "pop": 49570
+    "pop": 50359
   },
   {
     "name": "Garfield County",
-    "pop": 62254
+    "pop": 62722
   },
   {
     "name": "Gilpin County",
-    "pop": 5895
+    "pop": 5925
   },
   {
     "name": "Grand County",
-    "pop": 15748
+    "pop": 15971
   },
   {
     "name": "Gunnison County",
-    "pop": 17269
+    "pop": 17321
   },
   {
     "name": "Hinsdale County",
-    "pop": 779
+    "pop": 772
   },
   {
     "name": "Huerfano County",
-    "pop": 7104
+    "pop": 7063
   },
   {
     "name": "Jackson County",
-    "pop": 1314
+    "pop": 1311
   },
   {
     "name": "Jefferson County",
-    "pop": 575936
+    "pop": 576381
   },
   {
     "name": "Kiowa County",
-    "pop": 1428
+    "pop": 1376
   },
   {
     "name": "Kit Carson County",
-    "pop": 6974
+    "pop": 7007
   },
   {
     "name": "Lake County",
-    "pop": 7342
+    "pop": 7376
   },
   {
     "name": "La Plata County",
-    "pop": 56557
+    "pop": 56453
   },
   {
     "name": "Larimer County",
-    "pop": 366843
+    "pop": 370639
   },
   {
     "name": "Las Animas County",
-    "pop": 14297
+    "pop": 14373
   },
   {
     "name": "Lincoln County",
-    "pop": 5513
+    "pop": 5500
   },
   {
     "name": "Logan County",
-    "pop": 20809
+    "pop": 20607
   },
   {
     "name": "Mesa County",
-    "pop": 158534
+    "pop": 159637
   },
   {
     "name": "Mineral County",
-    "pop": 924
+    "pop": 935
   },
   {
     "name": "Moffat County",
-    "pop": 13166
+    "pop": 13317
   },
   {
     "name": "Montezuma County",
-    "pop": 26464
+    "pop": 26563
   },
   {
     "name": "Montrose County",
-    "pop": 43799
+    "pop": 44167
   },
   {
     "name": "Morgan County",
-    "pop": 28296
+    "pop": 29559
   },
   {
     "name": "Otero County",
-    "pop": 18294
+    "pop": 18115
   },
   {
     "name": "Ouray County",
-    "pop": 5088
+    "pop": 5160
   },
   {
     "name": "Park County",
-    "pop": 17900
+    "pop": 18101
   },
   {
     "name": "Phillips County",
-    "pop": 4435
+    "pop": 4465
   },
   {
     "name": "Pitkin County",
-    "pop": 16856
+    "pop": 16642
   },
   {
     "name": "Prowers County",
-    "pop": 11850
+    "pop": 11745
   },
   {
     "name": "Pueblo County",
-    "pop": 169383
+    "pop": 169427
   },
   {
     "name": "Rio Blanco County",
-    "pop": 6558
+    "pop": 6576
   },
   {
     "name": "Rio Grande County",
-    "pop": 11336
+    "pop": 11210
   },
   {
     "name": "Routt County",
-    "pop": 25027
+    "pop": 25064
   },
   {
     "name": "Saguache County",
-    "pop": 6616
+    "pop": 6681
   },
   {
     "name": "San Juan County",
-    "pop": 801
+    "pop": 803
   },
   {
     "name": "San Miguel County",
-    "pop": 7993
+    "pop": 7855
   },
   {
     "name": "Sedgwick County",
-    "pop": 2297
+    "pop": 2313
   },
   {
     "name": "Summit County",
-    "pop": 30583
+    "pop": 30441
   },
   {
     "name": "Teller County",
-    "pop": 24852
+    "pop": 24631
   },
   {
     "name": "Washington County",
-    "pop": 4835
+    "pop": 4843
   },
   {
     "name": "Weld County",
-    "pop": 350206
+    "pop": 359530
   },
   {
     "name": "Yuma County",
-    "pop": 9920
+    "pop": 9881
   }
 ];
 
